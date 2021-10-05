@@ -10,50 +10,56 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     
-    <title>Crappo</title>
+    <title>BiddingCoin</title>
 </head>
 <body>
     <header class="header">
             <a href="#!" class="logo">
-                <img src="images/Logo.svg" alt="logo">
+                <img class="logo-svg" src="./images/key.svg" alt="logo">
             </a>
+            <input id="toggle" type="checkbox">
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#!" class="nav__link">Products</a>
+                        <a href="#!" class="nav__link">Трейдинг</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#!" class="nav__link">Features</a>
+                        <a href="#!" class="nav__link">Финансы</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#!" class="nav__link">About</a>
+                        <a href="#!" class="nav__link">Майнинг</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#!" class="nav__link">Contact</a>
+                        <a href="#!" class="nav__link">Статьи</a>
                     </li>
                     <li class="nav__item nav__item_login">
-                        <a href="#!" class="nav__link nav__link_login">Login</a>
+                        <a href="#!" class="nav__link nav__link_login">Войти</a>
                     </li>
                     <li class="nav__item nav__item_submit">
-                        <a href="#!" class="nav__link nav__link_submit">Register</a>
+                        <a href="#!" class="nav__link nav__link_submit">Регистрация</a>
                     </li>
                 </ul>
             </nav>
+            <label class="toggle-container" for="toggle">
+                <span class="button-toggle"><img class="toggle" src="/images/menu_burger_icon_.svg" alt="Open"></span>
+                <span class="button-toggle-close"><img class="toggle" src="./images/close-cross-delete.svg" alt="Close"></span>
+
+                </label>
+            
     </header>
     <section>
         <div class="wrapper">
             <div class="main">
                 <div class="main__text">
                     <p class="main__text-top">
-                        <span class="main__text-top-right">75% SAVE</span>
-                        For the Black Friday weekend
+                        <span class="main__text-top-right">Скидка 75% </span> Для новых участников
                     </p>
-                    <h1 class="main__title">Fastest & secure platform to invest in crypto</h1>
-                    <p class="main__decs">Buy and sell cryptocurrencies, trusted by 10M wallets with over $30 billion in transactions.</p>
-                    <a href="#!" class="main__link">Try for FREE</a>
+                    <h1 class="main__title">Ваша идеальная криптовалютная биржа</h1>
+                    <p class="main__decs">Начните зарабатывать с BiddingCoin, крупнейшей криптобиржей в Восточной Европе</p>
+                    <a href="#!" class="main__link">Попробовать бесплатно</a>
                 </div>
                 <div class="main__img">
-                    <img src="./images/Illustration.svg" alt="illustration" class="main__img-1">
+                    <img src="./images/bitcoin1.png" alt="illustration" class="main__img-1">
                 </div>
             </div>
         </div>
@@ -66,8 +72,8 @@
                         <img src="./images/Bar Chart.svg" alt="" class="stat__icon-item">
                     </div>
                     <div class="stat__text">
-                        <span class="stat__title">$30B</span>
-                        <p class="stat__desc">Digital Currency Exchanged</p>
+                        <span class="stat__title">2300 BTC</span>
+                        <p class="stat__desc">Объем торгов за 24ч</p>
                     </div>
                 </div>
                 <div class="stat__item">
@@ -75,8 +81,8 @@
                         <img src="./images/Person.svg" alt="" class="stat__icon-item">
                     </div>
                     <div class="stat__text">
-                        <span class="stat__title">10M+</span>
-                        <p class="stat__desc">Trusted Wallets Investor</p>
+                        <span class="stat__title">10000+</span>
+                        <p class="stat__desc">Активных трейдеров</p>
                     </div>
                 </div>
                 <div class="stat__item">
@@ -84,27 +90,28 @@
                         <img src="./images/Earth.svg" alt="" class="stat__icon-item">
                     </div>
                     <div class="stat__text">
-                        <span class="stat__title">195</span>
-                        <p class="stat__desc">Countries Supported</p>
+                        <span class="stat__title">174</span>
+                        <p class="stat__desc">Валютных пар доступны</p>
                     </div>
                 </div>
             </div>
             <div class="text">
-                <h3 class="text__title">Check how much you can earn</h3>
-                <p class="text__subtitle">Let’s check your hash rate to see how much you will earn today, <br>Exercitation veniam consequat sunt nostrud amet.</p>
+                <h3 class="text__title">Проверьте, сколько вы можете заработать</h3>
+                <p class="text__subtitle"> Давайте проверим ваш хэшрейт, чтобы узнать, сколько вы заработаете сегодня</p>
             </div>
+           
         </div>
     </section>
     <section class="calc">
         <div class="calc-head">
-            <input type="text" class="calc-head__input" placeholder="Enter your hash rate">
+            <input type="text" class="calc-head__input" placeholder="Введите свой хэш-курс">
             <select class="calc-head__select" >
                 <option value="th">TH/s</option>
                 <option value="ph">PH/s</option>
                 <option value="eh">EH/s</option>
             </select>
             <button class="calc-head__btn" type="submit">
-                Calculate
+                Расчет
             </button>
         </div>
     </section>
@@ -112,18 +119,19 @@
         <div class="wrapper">
             <div class="calc-head calc-bottom">
                 <div class="calc-bottom__title">
-                    ESTIMATED 24 HOUR REVENUE:
+                    ПРЕДПОЛАГАЕМЫЙ ДОХОД ЗА 24 ЧАСА:
                 </div>
                 <div class="calc-bottom__text">
                     0.055 130 59 ETH <span class="text-blue">($1275)</span> 
                 </div>
                 <div class="calc-bottom__subtitle">
-                    Revenue will change based on mining difficulty and Ethereum price.
+                    Доход будет меняться в зависимости от сложности майнинга и цены ETH.
                 </div>
             </div>
         
             <div class="trade">
-                <h2 class="trade__title">Trade securely and market the high<br> growth cryptocurrencies. </h2>
+                <h2 class="trade__title">Торгуйте безопасно и продавайте<br>
+                    быстрорастущие криптовалюты</h2>
                 <div class="trade__cards">
 
                     <div class="trade__card">
@@ -132,7 +140,8 @@
                             Bitcoin <span class="trade__title-litl">BTC</span>
                         </p>
                         <p class="trade__subtitle-card">
-                        Digital currency in which a record of<br>transactions is maintained.
+                            Цифровая валюта, ведется<br> учет
+                            транзакций.
                         </p>
                         <a href="#!" class="trade__btn">
                             <span class="trade__btn-text"> Start mining</span> 
@@ -146,7 +155,7 @@
                             Ethereum <span class="trade__title-litl">ETH</span>
                         </p>
                         <p class="trade__subtitle-card">
-                            Blockchain technology to create and run decentralized digital applications.
+                            Технология блокчейна для создания и запуска децентрализованных цифровых приложений.
                         </p>
                         <a href="#!" class="trade__btn">
                             <span class="trade__btn-text"> Start mining</span> 
@@ -160,7 +169,7 @@
                             Litecoin <span class="trade__title-litl">LTC</span>
                         </p>
                         <p class="trade__subtitle-card">
-                            Cryptocurrency that enables instant payments to anyone in the world.
+                            Криптовалюта, которая позволяет осуществлять мгновенные платежи любому человеку в мире.
                         </p>
                         <a href="#!" class="trade__btn">
                             <span class="trade__btn-text"> Start mining</span> 
@@ -176,22 +185,23 @@
             <div class="footer__panel">
                 <div class="footer__text">
                     <p class="footer__title">
-                        Start mining now
+                        Начните майнинг прямо сейчас
                     </p>
                     <p class="footer__subtitle">
-                        Join now with CRAPPO to get the latest news <br>and start mining now
+                        Присоединяйтесь сейчас к BiddingCoin, чтобы получать последние новости
+и начинать майнинг прямо сейчас
                     </p>
                 </div>
                 <div class="footer__email">
-                    <input type="text" class="footer__input" placeholder="Enter your email">
+                    <input type="text" class="footer__input" placeholder="Ваш email">
                     <button class="footer__btn" type="submit">
-                        Subscribe
+                        Подписка
                     </button>
                 </div>
             </div>
             <div class="footer__bottom">
                 <a href="#!" class="footer__link">
-                    ©2021 CRAPPO. All rights reserved
+                    ©2021 BiddingCoin. All rights reserved
                 </a>
                 <ul class="footer__social">
                     <li class="footer__social-item">
