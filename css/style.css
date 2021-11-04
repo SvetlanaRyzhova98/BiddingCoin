@@ -419,6 +419,7 @@ body {
 .trade__card:hover .trade__btn-text {
   max-width: 100%;
   transform: translateX(4px);
+  opacity: 1;
 }
 .trade__card:hover .trade__btn-img {
   transform: scale(0.5) translateX(29px);
@@ -443,6 +444,7 @@ body {
   line-height: 150%;
   text-align: center;
   white-space: nowrap;
+  opacity: 0;
 }
 /*start*/
 .footer {
